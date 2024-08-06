@@ -1,5 +1,4 @@
 import zmq
-import json
 
 def sort_songs(songs):
     sorted_songs = sorted(songs, key=lambda x: x.split('. ', 1)[1])

@@ -1,5 +1,4 @@
 import zmq
-import json
 
 context = zmq.Context()
 socket = context.socket(zmq.REQ)
@@ -13,7 +12,9 @@ def sort_songs(songs):
     return response
 
 def main():
-    songs = ["1. Song1", "2. Song2", "3. Song3"]
+    songs = ["1. Not Like Us - Kendrick Lamar", "2. Good Luck, Babe! - Chappell Roan", "3. Who - Jimin"]
     
     sorted_songs = sort_songs(songs)
     print(sorted_songs)
+
+main()
